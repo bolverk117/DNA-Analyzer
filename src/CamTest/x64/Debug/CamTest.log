@@ -1,0 +1,21 @@
+﻿SimpleCam.obj : error LNK2019: unresolved external symbol cvCreateImage referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvGetSize referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPEAX@Z) referenced in function "public: __cdecl cv::Mat::~Mat(void)" (??1Mat@cv@@QEAA@XZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol "public: __cdecl cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QEAA@AEBVMat@1@@Z) referenced in function main
+SimpleCam.obj : error LNK2019: unresolved external symbol "public: void __cdecl cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QEAAXXZ) referenced in function "public: void __cdecl cv::Mat::release(void)" (?release@Mat@cv@@QEAAXXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol "public: void __cdecl cv::Mat::copySize(class cv::Mat const &)" (?copySize@Mat@cv@@QEAAXAEBV12@@Z) referenced in function "public: class cv::Mat & __cdecl cv::Mat::operator=(class cv::Mat const &)" (??4Mat@cv@@QEAAAEAV01@AEBV01@@Z)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvNamedWindow referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvShowImage referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvDestroyWindow referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvCreateTrackbar referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvSetMouseCallback referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvWaitKey referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvCreateCameraCapture referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvQueryFrame referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol cvReleaseCapture referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+SimpleCam.obj : error LNK2019: unresolved external symbol "void __cdecl cv::namedWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?namedWindow@cv@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) referenced in function main
+SimpleCam.obj : error LNK2019: unresolved external symbol "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) referenced in function main
+SimpleCam.obj : error LNK2019: unresolved external symbol "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV_InputArray@1@@Z) referenced in function main
+SimpleCam.obj : error LNK2019: unresolved external symbol "class cv::Mat __cdecl cv::imread(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?imread@cv@@YA?AVMat@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) referenced in function main
+SimpleCam.obj : error LNK2019: unresolved external symbol cvCvtColor referenced in function "int __cdecl cam(void)" (?cam@@YAHXZ)
+C:\Program Files\OpenCV\apps\CVFramework\x64\Debug\CamTest.exe : fatal error LNK1120: 20 unresolved externals

@@ -1,0 +1,32 @@
+﻿Build started 10/11/2012 9:08:48 AM.
+     1>Project "C:\Program Files\OpenCV\apps\CamTest\CamTest\CamTest.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\CamTest.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\CamTest.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\CamTest.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CamTest.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CamTest.cpp
+         CamTest.cpp
+     1>c:\program files\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CamTest.exe.embed.manifest.res" Debug\CamTest_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Program Files\OpenCV\apps\CamTest\Debug\CamTest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CamTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Program Files\OpenCV\apps\CamTest\Debug\CamTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Program Files\OpenCV\apps\CamTest\Debug\CamTest.lib" /MACHINE:X86 Debug\CamTest.exe.embed.manifest.res
+         Debug\CamTest.obj
+         Debug\stdafx.obj
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvDestroyWindow referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvReleaseCapture referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvWaitKey referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvShowImage referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvQueryFrame referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvNamedWindow referenced in function _main
+     1>CamTest.obj : error LNK2019: unresolved external symbol _cvCreateCameraCapture referenced in function _main
+     1>C:\Program Files\OpenCV\apps\CamTest\Debug\CamTest.exe : fatal error LNK1120: 7 unresolved externals
+     1>Done Building Project "C:\Program Files\OpenCV\apps\CamTest\CamTest\CamTest.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.17

@@ -47,8 +47,7 @@ int main()
 	// What can we do with the image?
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
-	cout << "
-
+	
 	cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
 	waitKey(0);
 

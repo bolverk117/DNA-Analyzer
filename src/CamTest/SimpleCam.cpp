@@ -10,7 +10,7 @@ using namespace cv;
 
 int main()
 {
-	int entry, sizeRows=0, sizeCols=0;
+	int entry, sizeRows=0, sizeCols=0, columnAverage=0;
 	Mat originalImg;
 	Mat grayScaleImg;
 
@@ -48,6 +48,19 @@ int main()
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
 	
+	for (i = 0; i < grayScaleImg.cols; i++)
+	{
+		columnAverage[i] = mean(grayScaleImg.col(i));
+	}
+
+	for (i = 1; i < grayScaleImg.cols - 1; i++)
+	{
+		columnAverage[i - 1];
+		columnAverage[i];
+		columnAverage[i + 1];
+	}
+	
+
 	cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
 	waitKey(0);
 

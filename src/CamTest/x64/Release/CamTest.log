@@ -5,7 +5,7 @@ c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(61): warning
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(63): warning C4101: 'valueH': unreferenced local variable
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(62): warning C4101: 'valueV': unreferenced local variable
   Generating code
-  2 of 125 functions ( 1.6%) were compiled, the rest were copied from previous compilation.
+  2 of 200 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     11 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

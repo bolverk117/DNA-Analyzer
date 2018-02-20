@@ -15,6 +15,7 @@ int main()
 	int entry, sizeRows=0, sizeCols=0;
 	Mat originalImg;
 	Mat grayScaleImg;
+	cv::Scalar pixel;
 	vector<Scalar> columnAverage;
 
 	cout << "Welcome to the Protein Gell Analysis App." << endl << "Please enter whether you would like to either upload an image by typing 1, or take a photo by typing 2.";
@@ -50,26 +51,33 @@ int main()
 	// What can we do with the image?
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
+	double *colAves;
+	colAves = (double *)malloc(sizeof(double)*sizeCols);
 	
 
-
-	for (int i = 0; i < grayScaleImg.cols; i++)
+	// need to replace mean with somthing that finds the highest value in a column
+	for (int i = 0; i < sizeCols; i++)
 	{
-		columnAverage.push_back( mean(grayScaleImg.col(i)) );
+		pixel = mean(grayScaleImg.col(i));
+		colAves[i] = pixel.val[0];
 	}
-	/*
-	for (i = 1; i < grayScaleImg.cols - 1; i++)
+	for (int i = 0; i < sizeCols; i++)
+		cout << i << ": " << colAves[i] << endl;
+	
+	for (int i = 4; i < sizeCols; i++)
 	{
-		columnAverage[i - 1];
-		columnAverage[i];
-		columnAverage[i + 1];
+		if (abs(colAves[i]-colAves[i-4]) > 10)
+		{
+			cout << "Lane edge at " << i - 2 << endl;
+		}
+		
 	}
-	*/
-	for (vector<Scalar>::iterator i = columnAverage.begin(); i != columnAverage.end(); ++i)
-	{
-		//i.val is of type cvmatrix, need to know how to interpet that data.
-		cout << (*i).val << endl;
-	}
+	
+	//for (vector<Scalar>::iterator i = columnAverage.begin(); i != columnAverage.end(); ++i)
+	//{
+	//	//i.val is of type cvmatrix, need to know how to interpet that data.
+	//	cout << (*i).val << endl;
+	//}
 
 	/*
 		int my_vector_size = columnAverage.size();

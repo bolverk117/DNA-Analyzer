@@ -1,63 +1,11 @@
-c:\program files\opencv\apps\camtest\camtest\x64\release\camtest.pch
-c:\program files\opencv\apps\camtest\camtest\x64\release\stdafx.obj
-c:\program files\opencv\apps\camtest\camtest\x64\release\vc100.pdb
-c:\program files\opencv\apps\camtest\camtest\x64\release\curve.obj
-c:\program files\opencv\apps\camtest\camtest\x64\release\camtest.obj
-c:\program files\opencv\apps\camtest\camtest\x64\release\activensnake.obj
-c:\program files\opencv\apps\labtracking\camtest\x64\release\camtest.pch
-c:\program files\opencv\apps\labtracking\camtest\x64\release\stdafx.obj
-c:\program files\opencv\apps\labtracking\camtest\x64\release\vc100.pdb
-c:\program files\opencv\apps\labtracking\camtest\x64\release\curve.obj
-c:\program files\opencv\apps\labtracking\camtest\x64\release\camtest.obj
-c:\program files\opencv\apps\labtracking\camtest\x64\release\activensnake.obj
-c:\program files\opencv\apps\texture\camtest\x64\release\camtest.pch
-c:\program files\opencv\apps\texture\camtest\x64\release\stdafx.obj
-c:\program files\opencv\apps\texture\camtest\x64\release\vc100.pdb
-c:\program files\opencv\apps\texture\camtest\x64\release\curve.obj
-c:\program files\opencv\apps\texture\camtest\x64\release\camtest.obj
-c:\program files\opencv\apps\texture\camtest\x64\release\activensnake.obj
-c:\program files\opencv\apps\cvframework\camtest\x64\release\camtest.pch
-c:\program files\opencv\apps\cvframework\camtest\x64\release\stdafx.obj
-c:\program files\opencv\apps\cvframework\camtest\x64\release\vc100.pdb
-c:\program files\opencv\apps\cvframework\camtest\x64\release\curve.obj
-c:\program files\opencv\apps\cvframework\camtest\x64\release\simplecam.obj
-c:\program files\opencv\apps\cvframework\camtest\x64\release\activensnake.obj
-c:\program files\opencv\apps\camtest\x64\release\camtest.exe
-c:\program files\opencv\apps\camtest\camtest\x64\release\camtest.exe.intermediate.manifest
-c:\program files\opencv\apps\camtest\x64\release\camtest.pdb
-c:\program files\opencv\apps\labtracking\x64\release\camtest.exe
-c:\program files\opencv\apps\labtracking\camtest\x64\release\camtest.exe.intermediate.manifest
-c:\program files\opencv\apps\labtracking\x64\release\camtest.pdb
-c:\program files\opencv\apps\texture\x64\release\camtest.exe
-c:\program files\opencv\apps\texture\camtest\x64\release\camtest.exe.intermediate.manifest
-c:\program files\opencv\apps\texture\x64\release\camtest.pdb
-c:\program files\opencv\apps\cvframework\x64\release\camtest.exe
-c:\program files\opencv\apps\cvframework\camtest\x64\release\camtest.exe.intermediate.manifest
-c:\program files\opencv\apps\cvframework\x64\release\camtest.pdb
-c:\program files\opencv\apps\cvframework\x64\release\camtest.ipdb
-c:\program files\opencv\apps\cvframework\x64\release\camtest.iobj
 c:\users\alaric\documents\github\dna-analyzer\src\x64\release\camtest.ipdb
 c:\users\alaric\documents\github\dna-analyzer\src\x64\release\camtest.iobj
-c:\program files\opencv\apps\cvframework\camtest\x64\release\vc141.pdb
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.pch
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\vc141.pdb
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\stdafx.obj
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\simplecam.obj
 c:\users\alaric\documents\github\dna-analyzer\src\x64\release\camtest.exe
 c:\users\alaric\documents\github\dna-analyzer\src\x64\release\camtest.pdb
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\activensnake.obj
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.obj
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\curve.obj
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\cl.command.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\cl.read.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\cl.write.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\link.command.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\link.read.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\link.write.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\mt.command.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\mt.read.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\mt.write.1.tlog
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\vc100.pdb
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.exe.intermediate.manifest.xml
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.tlog\camtest.write.1u.tlog
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.tlog\cl.command.1.tlog
 c:\users\alaric\documents\github\dna-analyzer\src\camtest\x64\release\camtest.tlog\cl.read.1.tlog

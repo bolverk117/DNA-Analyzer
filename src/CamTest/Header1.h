@@ -12,8 +12,9 @@ using namespace cv;
 
 // Define some evil global variables mainly due to OpenCV event handlers
 double			g_rho = 128;
-int				curx,
-cury;
+// int				curx = -1, cury = -1;
+int				curx, cury;
+
 const double	rhoScale = 2.55;
 
 #define PREVIEW 0

@@ -16,6 +16,7 @@ int main()
 	Mat originalImg;
 	Mat grayScaleImg;
 	cv::Scalar pixelValue;
+
 	//vector<Scalar> columnAverage;
 	//Double pointer that dynamically sets the size of the array colAves by initializing sizeCols
 	double *colAves;
@@ -51,12 +52,22 @@ int main()
 	//Create Windows
 	namedWindow("Gell", CV_WINDOW_AUTOSIZE);
 	imshow("Gell", grayScaleImg);
+
 	// .cols and .rows are opencv functions. 
 	//sizeCols and sizeRows hold the value of how many columns and rows there are in grayScaleImg 
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
+
 	
-	// ****need to replace mean with somthing that finds the highest value in a column****
+
+	//cvSetMouseCallback("mywindow", mouseHandler, NULL);
+	//while (curx == -1)
+	//{
+	//	//set to do nothing
+	//}
+
+
+	
 	//Iderates equal to the number of columns in grayScaleImg
 	//Sets pixelValue to the mean of all the pixel in each column
 	//.val return the double from pixelValue
@@ -68,9 +79,11 @@ int main()
 	}
 	//Test output that shows the column number next to each column mean
 	for (int i = 0; i < sizeCols; i++)
+	{
 		cout << i << ": " << colAves[i] << endl;
+	}
 	//Starting at the fourth column and then increaces buy one
-	//absolute value of the difference between 
+	//absolute value of the difference between every fourth column.
 	for (int i = 4; i < sizeCols; i++)
 	{
 		if (abs(colAves[i]-colAves[i-4]) > 10)

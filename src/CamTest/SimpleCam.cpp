@@ -17,10 +17,6 @@ int main()
 	Mat grayScaleImg;
 	cv::Scalar pixelValue;
 
-	//vector<Scalar> columnAverage;
-	//Double pointer that dynamically sets the size of the array colAves by initializing sizeCols
-	double *colAves;
-	colAves = (double *)malloc(sizeof(double)*sizeCols);
 
 	cout << "Welcome to the Protein Gell Analysis App." << endl << "Please enter whether you would like to either upload an image by typing 1, or take a photo by typing 2.";
 	cin >> entry;
@@ -58,7 +54,11 @@ int main()
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
 
-	
+
+	//vector<Scalar> columnAverage;
+	//Double pointer that dynamically sets the size of the array colAves by initializing sizeCols
+	double *colAves;
+	colAves = (double *)malloc(sizeof(double)*sizeCols);
 
 	//cvSetMouseCallback("mywindow", mouseHandler, NULL);
 	//while (curx == -1)

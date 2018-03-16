@@ -16,7 +16,7 @@ int main()
 	Mat originalImg;
 	Mat grayScaleImg;
 	cv::Scalar pixelValue;
-
+	cury = 0, curx = 0;
 
 	cout << "Welcome to the Protein Gell Analysis App." << endl << "Please enter whether you would like to either upload an image by typing 1, or take a photo by typing 2.";
 	cin >> entry;
@@ -43,7 +43,6 @@ int main()
 	}
 	// Convert to graysacale
 	cvtColor(originalImg, grayScaleImg, CV_BGR2GRAY);
-
 	
 	//Create Windows
 	namedWindow("Gell", CV_WINDOW_AUTOSIZE);
@@ -54,20 +53,11 @@ int main()
 	sizeCols = grayScaleImg.cols;
 	sizeRows = grayScaleImg.rows;
 
-
 	//vector<Scalar> columnAverage;
 	//Double pointer that dynamically sets the size of the array colAves by initializing sizeCols
 	double *colAves;
 	colAves = (double *)malloc(sizeof(double)*sizeCols);
 
-	//cvSetMouseCallback("mywindow", mouseHandler, NULL);
-	//while (curx == -1)
-	//{
-	//	//set to do nothing
-	//}
-
-
-	
 	//Iderates equal to the number of columns in grayScaleImg
 	//Sets pixelValue to the mean of all the pixel in each column
 	//.val return the double from pixelValue
@@ -77,13 +67,21 @@ int main()
 		pixelValue = mean(grayScaleImg.col(i));
 		colAves[i] = pixelValue.val[0];
 	}
+
+	//Calles the mouse function from Header1.h
+	cvSetMouseCallback("mywindow", mouseHandler, NULL);
+
+	//Put values in to globalPD from zenBox.h
+	globalPD.pixelArray = colAves;
+	globalPD.grayImg = grayScaleImg;
+	
 	//Test output that shows the column number next to each column mean
 	for (int i = 0; i < sizeCols; i++)
 	{
 		cout << i << ": " << colAves[i] << endl;
 	}
 	//Starting at the fourth column and then increaces buy one
-	//absolute value of the difference between every fourth column.
+	//absolute value of the difference between every fourth column
 	for (int i = 4; i < sizeCols; i++)
 	{
 		if (abs(colAves[i]-colAves[i-4]) > 10)
@@ -93,23 +91,12 @@ int main()
 		
 	}
 	
-	//for (vector<Scalar>::iterator i = columnAverage.begin(); i != columnAverage.end(); ++i)
-	//{
-	//	//i.val is of type cvmatrix, need to know how to interpet that data.
-	//	cout << (*i).val << endl;
-	//}
-
-	/*
-		int my_vector_size = columnAverage.size();
-
-		// Increase vector before operations to some size 'n'
-		int n = 2000;
-		columnAverage.reserve(n);
-	
-	*/
-
+	// Testing output that shows how many columns and rows are in the image
 	cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
 	waitKey(0);
+
+
+
 
 	return 0;
 }

@@ -6,6 +6,7 @@
 #include <cv.h>
 #include <stdio.h>
 #include <cmath>
+#include <zenBox.h>
 
 using namespace std;
 using namespace cv;
@@ -37,6 +38,9 @@ static void mouseHandler(int event, int x, int y, int, void*)
 	curx = x;
 	cury = y;
 
+	//Puts in vales in to the strutct from zenBox.h
+	globalPD.x = x;
+	globalPD.y = y;
 	// Print the position
 	//	fprintf(stderr, "Mouse: (%d, %d)\n", curx, cury);
 

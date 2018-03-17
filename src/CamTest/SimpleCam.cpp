@@ -74,29 +74,34 @@ int main()
 	//Put values in to globalPD from zenBox.h
 	globalPD.pixelArray = colAves;
 	globalPD.grayImg = grayScaleImg;
-	
+
+	////Test output to see if globalPD.pixelArray is working
+	//for(int i = 0; i < sizeCols; i++)
+	//{
+	//	cout << i << ": " << globalPD.pixelArray[i] << endl;
+	//}
+
+	// Test output
+	cout << "this "  << globalPD.x << " is the value of x " << endl;
 	//Test output that shows the column number next to each column mean
-	for (int i = 0; i < sizeCols; i++)
+	/*for (int i = 0; i < sizeCols; i++)
 	{
 		cout << i << ": " << colAves[i] << endl;
-	}
-	//Starting at the fourth column and then increaces buy one
-	//absolute value of the difference between every fourth column
-	for (int i = 4; i < sizeCols; i++)
-	{
-		if (abs(colAves[i]-colAves[i-4]) > 10)
-		{
-			cout << "Lane edge at " << i - 2 << endl;
-		}
-		
-	}
-	
-	// Testing output that shows how many columns and rows are in the image
-	cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
+	}*/
+	////Starting at the fourth column and then increaces buy one
+	////absolute value of the difference between every fourth column
+	//for (int i = 4; i < sizeCols; i++)
+	//{
+	//	if (abs(colAves[i]-colAves[i-4]) > 10)
+	//	{
+	//		cout << "Lane edge at " << i - 2 << endl;
+	//	}
+	//	
+	//}
+	//
+	//// Testing output that shows how many columns and rows are in the image
+	//cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
+
 	waitKey(0);
-
-
-
-
 	return 0;
-}
+} 

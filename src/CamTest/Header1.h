@@ -30,6 +30,7 @@ static void calcRho(int valueSlider)
 // Callback for Mouse events in the video window
 static void mouseHandler(int event, int x, int y, int, void*)
 {
+
 	// We only care about Left Clicks
 	if (event != CV_EVENT_LBUTTONDOWN)
 		return;
@@ -39,10 +40,11 @@ static void mouseHandler(int event, int x, int y, int, void*)
 	cury = y;
 
 	//Puts in vales in to the strutct from zenBox.h
-	globalPD.x = x;
-	globalPD.y = y;
+	globalPD.x = curx;
+	globalPD.y = cury;
 	// Print the position
 	//	fprintf(stderr, "Mouse: (%d, %d)\n", curx, cury);
+	
 
 	return;
 }

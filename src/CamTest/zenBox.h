@@ -1,6 +1,7 @@
-#pragma once
+
 #include <cv.h>
 #include <stdio.h>
+
 
 using namespace std;
 using namespace cv;
@@ -17,9 +18,12 @@ struct pictureData
 //sets a varable to contain all the data from pictureData
 pictureData globalPD;
 
+//use this function to pull the from pixelArray
+//based on the column from the x value
 void placeHolder()
 {
-	//use this function to pull the from pixelArray
-	//based on the column from the x value
+	
+	
 }
 
+#pragma once

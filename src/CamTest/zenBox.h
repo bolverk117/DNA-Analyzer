@@ -1,5 +1,9 @@
 #pragma once
-//#include <cv.h>
+#include <cv.h>
+#include <stdio.h>
+
+using namespace std;
+using namespace cv;
 
 // A data type that has an x and y value for the mouse clicker
 // Has a double for pixel values, and a matrix for an image

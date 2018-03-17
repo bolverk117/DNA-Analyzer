@@ -6,7 +6,7 @@
 #include <cv.h>
 #include <stdio.h>
 #include <cmath>
-#include <zenBox.h>
+#include "zenBox.h"
 
 using namespace std;
 using namespace cv;

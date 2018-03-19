@@ -58,6 +58,36 @@ int main()
 	double *colAves;
 	colAves = (double *)malloc(sizeof(double)*sizeCols);
 
+	//Put values in to globalPD from zenBox.h
+	globalPD.pixelArray = colAves;
+	globalPD.grayImg = grayScaleImg;
+
+	
+
+	//Calles the mouse function from Header1.h
+	cvSetMouseCallback("mywindow", mouseHandler, NULL);
+
+	//---------------------------Testing Output Below this Line---------------------
+	// This section is for testing and trouble shooting only
+
+	
+
+	//after first cick rest to zero
+	//while !=done
+	//while loop gpd.x is = 0
+	//process pixelArrey
+	//reset to zero 
+
+	////Test output to see if globalPD.pixelArray is working
+	//for(int i = 0; i < sizeCols; i++)
+	//{
+	//	cout << i << ": " << globalPD.pixelArray[i] << endl;
+	//}
+	// while goblePD.x == 0 wait
+
+	// Test output
+	cout << "this "  << globalPD.x << " is the value of x " << endl;
+
 	//Iderates equal to the number of columns in grayScaleImg
 	//Sets pixelValue to the mean of all the pixel in each column
 	//.val return the double from pixelValue
@@ -67,22 +97,6 @@ int main()
 		pixelValue = mean(grayScaleImg.col(i));
 		colAves[i] = pixelValue.val[0];
 	}
-
-	//Calles the mouse function from Header1.h
-	cvSetMouseCallback("mywindow", mouseHandler, NULL);
-
-	//Put values in to globalPD from zenBox.h
-	globalPD.pixelArray = colAves;
-	globalPD.grayImg = grayScaleImg;
-
-	////Test output to see if globalPD.pixelArray is working
-	//for(int i = 0; i < sizeCols; i++)
-	//{
-	//	cout << i << ": " << globalPD.pixelArray[i] << endl;
-	//}
-
-	// Test output
-	cout << "this "  << globalPD.x << " is the value of x " << endl;
 	//Test output that shows the column number next to each column mean
 	/*for (int i = 0; i < sizeCols; i++)
 	{

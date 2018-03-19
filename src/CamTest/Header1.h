@@ -38,10 +38,13 @@ static void mouseHandler(int event, int x, int y, int, void*)
 	// Get the image coordinates of the left click
 	curx = x;
 	cury = y;
-
+	// if left down 
 	//Puts in vales in to the strutct from zenBox.h
 	globalPD.x = curx;
 	globalPD.y = cury;
+	//if down
+
+
 	// Print the position
 	//	fprintf(stderr, "Mouse: (%d, %d)\n", curx, cury);
 	

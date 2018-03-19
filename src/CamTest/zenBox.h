@@ -18,6 +18,19 @@ struct pictureData
 //sets a varable to contain all the data from pictureData
 pictureData globalPD;
 
+
+void waitChecker()
+{
+	while (event )
+	{
+		//wait
+		while (globalPD.x == 0)
+		{
+
+		}
+	}
+}
+
 //use this function to pull the from pixelArray
 //based on the column from the x value
 void placeHolder()

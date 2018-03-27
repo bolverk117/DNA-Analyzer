@@ -30,20 +30,22 @@ static void calcRho(int valueSlider)
 // Callback for Mouse events in the video window
 static void mouseHandler(int event, int x, int y, int, void*)
 {
+	cout << " in mouse " << endl;
+
+	if (event == EVENT_LBUTTONDOWN)
+	{
+		cout << "Left button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+		// if left down 
+		//Puts in vales in to the strutct from zenBox.h
+		globalPD.x = x;
+		globalPD.y = y;
+	}
 
 	// We only care about Left Clicks
 	if (event != CV_EVENT_LBUTTONDOWN)
 		return;
 
-	// Get the image coordinates of the left click
-	curx = x;
-	cury = y;
-	// if left down 
-	//Puts in vales in to the strutct from zenBox.h
-	globalPD.x = curx;
-	globalPD.y = cury;
-	//if down
-
+	
 
 	// Print the position
 	//	fprintf(stderr, "Mouse: (%d, %d)\n", curx, cury);

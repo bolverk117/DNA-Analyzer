@@ -21,14 +21,25 @@ pictureData globalPD;
 
 void waitChecker()
 {
-	while (event )
+	//test output
+	cout << " press f key " << endl;
+	//While f key is not pressed wait
+	while (102 != waitKey(0) & 0xFF)
 	{
 		//wait
-		while (globalPD.x == 0)
-		{
 
-		}
+
 	}
+	cout << " f key has been pressed " << endl;
+
+	/*
+	while (globalPD.x == 0)
+	{
+		//wait
+	}
+	*/
+	//jhbhj
+
 }
 
 //use this function to pull the from pixelArray
@@ -39,4 +50,8 @@ void placeHolder()
 	
 }
 
+void mouseValues()
+{
+
+}
 #pragma once

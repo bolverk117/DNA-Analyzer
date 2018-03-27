@@ -66,9 +66,12 @@ int main()
 
 	//Calles the mouse function from Header1.h
 	cvSetMouseCallback("mywindow", mouseHandler, NULL);
+	cout << " passing the mouse " << endl;
+	//waitChecker();
 
 	//---------------------------Testing Output Below this Line---------------------
 	// This section is for testing and trouble shooting only
+
 
 	
 
@@ -97,6 +100,13 @@ int main()
 		pixelValue = mean(grayScaleImg.col(i));
 		colAves[i] = pixelValue.val[0];
 	}
+
+	/*
+	int key = waitKey(0) & 0xFF;
+
+	if (102 == key)
+		cout << "F Was pressed" << endl;
+		*/
 	//Test output that shows the column number next to each column mean
 	/*for (int i = 0; i < sizeCols; i++)
 	{
@@ -115,7 +125,7 @@ int main()
 	//
 	//// Testing output that shows how many columns and rows are in the image
 	//cout << "Image size (cols, rows): " << sizeCols << " " << sizeRows << endl;
-
+	
 	waitKey(0);
 	return 0;
 } 

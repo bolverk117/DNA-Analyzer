@@ -30,6 +30,12 @@ static void calcRho(int valueSlider)
 // Callback for Mouse events in the video window
 static void mouseHandler(int event, int x, int y, int, void*)
 {
+	cout << "AYYYYY\n";
+
+	// We only care about Left Clicks
+	if (event != CV_EVENT_LBUTTONDOWN)
+		return;
+
 	cout << " in mouse " << endl;
 
 	if (event == EVENT_LBUTTONDOWN)
@@ -41,9 +47,6 @@ static void mouseHandler(int event, int x, int y, int, void*)
 		globalPD.y = y;
 	}
 
-	// We only care about Left Clicks
-	if (event != CV_EVENT_LBUTTONDOWN)
-		return;
 
 	
 

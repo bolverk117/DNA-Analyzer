@@ -65,7 +65,7 @@ int main()
 	
 
 	//Calles the mouse function from Header1.h
-	cvSetMouseCallback("mywindow", mouseHandler, NULL);
+	cvSetMouseCallback("Gell", mouseHandler, NULL);
 	cout << " passing the mouse " << endl;
 	//waitChecker();
 
@@ -95,11 +95,11 @@ int main()
 	//Sets pixelValue to the mean of all the pixel in each column
 	//.val return the double from pixelValue
 	//[0] limites the returns to just the first field the other fields values are zero in gray scale images 
-	for (int i = 0; i < sizeCols; i++)
+	/*for (int i = 0; i < sizeCols; i++)
 	{
 		pixelValue = mean(grayScaleImg.col(i));
 		colAves[i] = pixelValue.val[0];
-	}
+	}*/
 
 	/*
 	int key = waitKey(0) & 0xFF;

@@ -67,7 +67,7 @@ int main()
 	//Calles the mouse function from Header1.h
 	cvSetMouseCallback("Gell", mouseHandler, NULL);
 	cout << " passing the mouse " << endl;
-	//waitChecker();
+	waitChecker();
 
 	//---------------------------Testing Output Below this Line---------------------
 	// This section is for testing and trouble shooting only

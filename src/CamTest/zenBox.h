@@ -18,7 +18,7 @@ struct pictureData
 //sets a varable to contain all the data from pictureData
 pictureData globalPD;
 
-
+//This gives the user time to 
 void waitChecker()
 {
 	//test output
@@ -27,19 +27,15 @@ void waitChecker()
 	while (102 != waitKey(0) & 0xFF)
 	{
 		//wait
-
-
 	}
 	cout << " f key has been pressed " << endl;
 
-	/*
+	//As long as the user has not clicked it will not go passed this point
 	while (globalPD.x == 0)
 	{
 		//wait
 	}
-	*/
-	//jhbhj
-
+	
 }
 
 //use this function to pull the from pixelArray
@@ -55,3 +51,7 @@ void mouseValues()
 
 }
 #pragma once
+//I need a function that measures edges in the selected column. And store the values
+//I need a function that measures the distance between the point clicked and the each of the edges in the selected column, And store the values
+//I need a function that compares ladder edges to the other edges
+//I need a function to display all stored values

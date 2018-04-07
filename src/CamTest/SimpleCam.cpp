@@ -67,17 +67,14 @@ int main()
 	//Calles the mouse function from Header1.h
 	cvSetMouseCallback("Gell", mouseHandler, NULL);
 	cout << " passing the mouse " << endl;
+
+
+
 	waitChecker();
 
 	//---------------------------Testing Output Below this Line---------------------
 	// This section is for testing and trouble shooting only
-
-
-	
-
-	//after first cick rest to zero
-	//while !=done
-	//while loop gpd.x is = 0
+		
 	//process pixelArrey
 	//reset to zero 
 
@@ -118,6 +115,7 @@ int main()
 	//{
 	//	if (abs(colAves[i]-colAves[i-4]) > 10)
 	//	{
+	//		//add to edge array
 	//		cout << "Lane edge at " << i - 2 << endl;
 	//	}
 	//	

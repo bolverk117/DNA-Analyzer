@@ -18,15 +18,28 @@ struct pictureData
 //sets a varable to contain all the data from pictureData
 pictureData globalPD;
 
+// --list and indxer
+// need int to keep track of list
+void mouseValues()
+{
+	//store well cor
+}
+
 //This gives the user time to 
 void waitChecker()
 {
 	//test output
 	cout << " press f key " << endl;
 	//While f key is not pressed wait
-	while (102 != waitKey(0) & 0xFF)
+	while ((102 != waitKey(0) & 0xFF) || (113 !=waitKey(0) & 0xFF))// or Q
 	{
 		//wait
+		//if lower case q is pressed exit out       
+		if (113 == waitKey(0) & 0xFF)
+		{
+			return;
+		}
+
 	}
 	cout << " f key has been pressed " << endl;
 
@@ -35,7 +48,7 @@ void waitChecker()
 	{
 		//wait
 	}
-	
+	mouseValues();
 }
 
 //use this function to pull the from pixelArray
@@ -46,10 +59,7 @@ void placeHolder()
 	
 }
 
-void mouseValues()
-{
 
-}
 #pragma once
 //I need a function that measures edges in the selected column. And store the values
 //I need a function that measures the distance between the point clicked and the each of the edges in the selected column, And store the values

@@ -68,7 +68,7 @@ int main()
 	cvSetMouseCallback("Gell", mouseHandler, NULL);
 	cout << " passing the mouse " << endl;
 
-
+	cout << "Please Click on the well for the Ladder then hit the w key when you are ready to enter the ladder values. " << endl;
 
 	waitChecker();
 
@@ -114,7 +114,7 @@ int main()
 	//for (int i = 4; i < sizeCols; i++)
 	//{
 	//	if (abs(colAves[i]-colAves[i-4]) > 10)
-	//	{
+	//	{  
 	//		//add to edge array
 	//		cout << "Lane edge at " << i - 2 << endl;
 	//	}

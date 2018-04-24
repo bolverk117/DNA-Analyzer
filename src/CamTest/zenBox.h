@@ -22,19 +22,34 @@ pictureData globalPD;
 // need int to keep track of list
 void mouseValues()
 {
+	
 	//store well cor
 }
 
 //This gives the user time to 
 void waitChecker()
 {
+	int totalLadderEdges, ladderEdges;
 	//test output
 	cout << " press f key " << endl;
-	//While f key is not pressed wait
-	while ((102 != waitKey(0) & 0xFF) || (113 !=waitKey(0) & 0xFF))// or Q
+	//While q key is not pressed wait
+	while (113 != waitKey(0) & 0xFF)
 	{
+		cout << "  " << endl;
+
+		//if w is pressed
+		if (119 == waitKey(0) & 0xFF)
+		{
+			cout << " Please enter the known values for the ladder " << endl;
+			for (int i = 0; i < totalLadderEdges; i++)
+			{
+				cout << " Enter the value for the first ladder ban  " << endl;
+			}
+			
+
+		}
 		//wait
-		//if lower case q is pressed exit out       
+		//if lower case w is pressed exit out       
 		if (113 == waitKey(0) & 0xFF)
 		{
 			return;

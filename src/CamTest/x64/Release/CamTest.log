@@ -1,16 +1,77 @@
-﻿  SimpleCam.cpp
+﻿  stdafx.cpp
+  SimpleCam.cpp
 c:\program files\opencv\build\include\opencv2\flann\logger.h(67): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(34): warning C4806: '&': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(34): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(38): warning C4806: '&': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(38): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(74): warning C4101: 'value': unreferenced local variable
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(76): warning C4101: 'valueH': unreferenced local variable
-c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(75): warning C4101: 'valueV': unreferenced local variable
-  Generating code
-  5 of 134 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  CamTest.vcxproj -> C:\Users\Alaric\Documents\GitHub\DNA-Analyzer\src\x64\Release\CamTest.exe
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(35): warning C4806: '&': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(35): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(39): error C2059: syntax error: 'if'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(40): error C2143: syntax error: missing ';' before '{'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): error C2143: syntax error: missing ';' before '<<'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(48): error C2059: syntax error: 'while'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(49): error C2143: syntax error: missing ';' before '{'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(49): error C2447: '{': missing function header (old-style formal list?)
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(52): error C2556: 'int mouseValues(void)': overloaded function differs only by return type from 'void mouseValues(void)'
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(23): note: see declaration of 'mouseValues'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(52): error C2371: 'mouseValues': redefinition; different basic types
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(23): note: see declaration of 'mouseValues'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(53): error C2059: syntax error: '}'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(53): error C2143: syntax error: missing ';' before '}'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(58): error C2143: syntax error: missing ';' before '{'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(58): error C2447: '{': missing function header (old-style formal list?)
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(37): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(37): error C2297: '<<': illegal, right operand has type 'const char [11]'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(37): error C2563: mismatch in formal parameter list
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(37): error C2568: '<<': unable to resolve function overload
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(37): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2297: '<<': illegal, right operand has type 'const char [49]'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2297: '<<': illegal, right operand has type 'const char [3]'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2297: '<<': illegal, right operand has type 'const char [2]'
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2563: mismatch in formal parameter list
+c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): error C2568: '<<': unable to resolve function overload
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\Header1.h(41): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+SimpleCam.cpp(21): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(21): error C2297: '<<': illegal, right operand has type 'const char [42]'
+SimpleCam.cpp(21): error C2563: mismatch in formal parameter list
+SimpleCam.cpp(21): error C2568: '<<': unable to resolve function overload
+  SimpleCam.cpp(21): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+SimpleCam.cpp(27): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(27): error C2297: '<<': illegal, right operand has type 'const char [36]'
+SimpleCam.cpp(27): warning C4552: '<<': operator has no effect; expected operator with side-effect
+SimpleCam.cpp(32): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(32): error C2297: '<<': illegal, right operand has type 'const char [23]'
+SimpleCam.cpp(32): warning C4552: '<<': operator has no effect; expected operator with side-effect
+SimpleCam.cpp(69): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(69): error C2297: '<<': illegal, right operand has type 'const char [20]'
+SimpleCam.cpp(69): error C2563: mismatch in formal parameter list
+SimpleCam.cpp(69): error C2568: '<<': unable to resolve function overload
+  SimpleCam.cpp(69): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+SimpleCam.cpp(71): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(71): error C2297: '<<': illegal, right operand has type 'const char [59]'
+SimpleCam.cpp(71): error C2563: mismatch in formal parameter list
+SimpleCam.cpp(71): error C2568: '<<': unable to resolve function overload
+  SimpleCam.cpp(71): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+SimpleCam.cpp(89): error C2872: 'cout': ambiguous symbol
+  c:\users\alaric\documents\github\dna-analyzer\src\camtest\zenBox.h(45): note: could be 'int cout'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include\iostream(28): note: or       'std::ostream std::cout'
+SimpleCam.cpp(89): error C2297: '<<': illegal, right operand has type 'const char [6]'
+SimpleCam.cpp(89): error C2297: '<<': illegal, right operand has type 'const char [20]'
+SimpleCam.cpp(89): error C2563: mismatch in formal parameter list
+SimpleCam.cpp(89): error C2568: '<<': unable to resolve function overload
+  SimpleCam.cpp(89): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
